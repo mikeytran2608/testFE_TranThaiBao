@@ -5,6 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Funiro.</title>
 
+        <!-- Embed icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Favicon -->
+
         <!-- Reset CSS -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
 
@@ -13,9 +24,72 @@
     </head>
     <body>
         <!-- Header -->
-        <header class="header fixed"></header>
+        <header class="header fixed">
+            <div class="main-content">
+                <div class="body">
+                    <!-- Logo -->
+                    <a href="/">
+                        <img
+                            src="./assets/images/logo.svg"
+                            alt="Funiro."
+                            class="logo"
+                        />
+                    </a>
 
-        <main></main>
+                    <!-- Nav -->
+                    <nav class="nav">
+                        <ul>
+                            <li class="active">
+                                <a href="#!">Products</a>
+                                <img
+                                    src="./assets/images/arrow-down.svg"
+                                    alt=""
+                                />
+                            </li>
+                            <li class="active">
+                                <a href="#!">Rooms</a>
+                                <img
+                                    src="./assets/images/arrow-down.svg"
+                                    alt=""
+                                />
+                            </li>
+                            <li class="active">
+                                <a href="#!">Inspirations</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Search box -->
+                    <div class="search">
+                        <i class="search-icon fa-solid fa-magnifying-glass"></i>
+                        <input
+                            class="search-input"
+                            type="text"
+                            placeholder="Search for minimalist chair"
+                        />
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="action">
+                        <a href="#!">
+                            <i class="fa-regular fa-heart action-icon"></i>
+                        </a>
+                        <a href="#!">
+                            <i
+                                class="fa-solid fa-cart-shopping action-icon"
+                            ></i>
+                        </a>
+                        <img
+                            class="avatar"
+                            src="./assets/images/avatar.jpg"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main style="height: 6000px"></main>
 
         <!-- Footer -->
         <footer class="footer"></footer>
