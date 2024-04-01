@@ -7,6 +7,7 @@ let next = document.getElementById("next");
 let active = 0;
 let lengthItems = items.length - 1;
 
+// Nút qua phải item
 next.onclick = function () {
     if (active + 1 > lengthItems) {
         active = 0;
@@ -16,6 +17,7 @@ next.onclick = function () {
     reloadSlider();
 };
 
+// Nút qua trái item
 prev.onclick = function () {
     if (active - 1 < 0) {
         active = lengthItems;
@@ -25,6 +27,7 @@ prev.onclick = function () {
     reloadSlider();
 };
 
+// Tự động đổi item từ trái sang phải với 3 giây
 let refreshSlider = setInterval(() => {
     next.click();
 }, 3000);
@@ -42,6 +45,7 @@ function reloadSlider() {
     }, 3000);
 }
 
+// Bắt sự kiện click của các nút
 dots.forEach((li, key) => {
     li.addEventListener("click", function () {
         active = key;
