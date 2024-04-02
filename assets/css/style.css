@@ -202,7 +202,7 @@ a {
 }
 /* ======================== Feature ======================== */
 .feature {
-    padding: 73px 0 88px;
+    padding: 73px 103px 88px;
 }
 
 .feature .feature-list {
@@ -213,6 +213,7 @@ a {
 .feature .feature-item {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
 }
 
@@ -234,6 +235,10 @@ a {
     font-weight: 500;
     line-height: 24px;
     color: #898989;
+}
+
+.feature-content {
+    gap: 92px;
 }
 
 /* ======================== Responsive ======================== */
