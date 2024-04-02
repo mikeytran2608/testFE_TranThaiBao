@@ -37,6 +37,18 @@ a {
     text-decoration: none;
 }
 
+.btn {
+    background: #e89f71;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
 .main-content {
     width: 1291px;
     max-width: calc(100% - 48px);
@@ -127,6 +139,12 @@ a {
     background: #f9f1e7;
 }
 
+.body-slider .hero-content:hover,
+.body-slider .info-box:hover {
+    border-color: transparent;
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.2);
+}
+
 .slider {
     position: relative;
     width: 1339px;
@@ -157,8 +175,8 @@ a {
     display: flex;
     position: absolute;
     top: 45%;
-    left: 5%;
-    width: 90%;
+    left: 1%;
+    width: 98%;
     justify-content: space-between;
 }
 
@@ -177,7 +195,7 @@ a {
 .slider .dots {
     display: flex;
     position: absolute;
-    bottom: 10px;
+    bottom: -8px;
     left: 0;
     color: #fff;
     width: 100%;
@@ -200,24 +218,108 @@ a {
 .slider .dots li.active {
     background: #e89f71;
 }
+
+.hero-content {
+    position: absolute;
+    top: 36px;
+    left: 99px;
+    width: 494px;
+    height: 553px;
+    background-color: rgb(255 255 255 / 70%);
+    backdrop-filter: blur(5px);
+}
+
+.hero-content .content {
+    padding: 60px;
+}
+
+.hero-content .title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 67.2px;
+    color: #3a3a3a;
+}
+
+.hero-content .desc {
+    padding-top: 16px;
+    width: 357px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #898989;
+}
+
+.hero-content .cta-btn {
+    margin-top: 48px;
+    width: 100%;
+    height: 78px;
+}
+
+.info-box {
+    display: flex;
+    position: absolute;
+    bottom: 54px;
+    right: 89px;
+    width: 294px;
+    height: 139px;
+    background-color: rgb(255 255 255 / 70%);
+    backdrop-filter: blur(5px);
+    padding: 24px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.info-box .desc .product-name {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.6px;
+    color: #3a3a3a;
+}
+
+.info-box .desc .desc-product {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #616161;
+}
+
+.info-box .desc .price-product {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #3a3a3a;
+}
+
+.info-box .icon {
+    width: 24px;
+    height: 22.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
 /* ======================== Feature ======================== */
 .feature {
     padding: 73px 103px 88px;
 }
 
-.feature .feature-list {
+.feature-content {
+    gap: 92px;
+}
+
+.feature-list {
     display: flex;
     justify-content: space-between;
 }
 
-.feature .feature-item {
+.feature-item {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
 
-.feature .feature-item .thumb {
+.feature-item .thumb {
     width: 40px;
     height: 40px;
     margin-right: 24px;
@@ -235,10 +337,6 @@ a {
     font-weight: 500;
     line-height: 24px;
     color: #898989;
-}
-
-.feature-content {
-    gap: 92px;
 }
 
 /* ======================== Responsive ======================== */
