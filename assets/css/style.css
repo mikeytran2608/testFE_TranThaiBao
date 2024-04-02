@@ -38,6 +38,8 @@ a {
 }
 
 .btn {
+    display: inline-block;
+
     background: #e89f71;
     color: #fff;
     font-size: 20px;
@@ -47,6 +49,42 @@ a {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+
+.discount {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #e97171;
+    color: #fff;
+    border: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #2ec1ac;
+    color: #fff;
+    border: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-content {
@@ -362,8 +400,8 @@ a {
     gap: 32px;
 }
 
-.products .list:last-child {
-    margin-top: -64px;
+.products .item {
+    position: relative;
 }
 
 .products .item img {
@@ -393,6 +431,77 @@ a {
 
 .products .price {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-info-product {
+    padding: 16px 16px 30px;
+}
+
+.price-initial {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #3a3a3a;
+}
+
+.price-fix {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #b0b0b0;
+    text-decoration: line-through;
+}
+
+.btn-show-more {
+    min-width: 245px;
+    height: 48px;
+    background: transparent;
+    border: 1px solid #e89f71;
+    color: #e89f71;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+}
+/* ======================== Inspirations ======================== */
+.inspirations {
+    margin-top: 44px;
+    background: #fcf8f3;
+}
+
+.inspirations .body {
+    display: flex;
+    padding: 53px 0;
+    justify-content: space-between;
+}
+
+.inspirations .content {
+    width: 41%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.inspirations .heading {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.inspirations .desc {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #616161;
+}
+
+.inspirations .images img {
+    width: 480px;
+    height: 582px;
+    object-fit: cover;
 }
 /* ======================== Responsive ======================== */
 @media screen and(max-width: 768px) {
