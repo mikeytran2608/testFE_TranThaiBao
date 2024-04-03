@@ -573,8 +573,43 @@ a {
 }
 
 .tipandtrick .content {
-    margin-top: -1px;
-    background-color: red;
+    max-width: 391px;
+    padding: 16px;
+    margin-top: -2px;
+}
+
+.tipandtrick .item:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.tipandtrick .heading {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.8px;
+    color: #3a3a3a;
+}
+
+.tipandtrick .date {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #898989;
+}
+
+.tipandtrick .dots {
+    margin-top: 25px;
+}
+
+/* ======================== Share ======================== */
+.share {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.share .images {
+    display: flex;
 }
 
 /* ======================== Responsive ======================== */
@@ -583,49 +618,3 @@ a {
         height: 400px;
     }
 }
-
-/*
-<!-- Tip & Trick -->
-            <div class="tipandtrick">
-                <div class="tipandtrick-content">
-                    <h2 class="title">Tips & Tricks</h2>
-                    <div class="list">
-                        <!-- Item 1 -->
-                        <div class="item">
-                            <img src="./assets/images/tip-1.png" alt="How to create a living room to love" class="images">
-                            <div class="content">
-                                <div class="heading">
-                                    How to create a living room to love
-                                </div>
-                                <div class="date">20 jan 2020</div>
-                            </div>
-                        </div>
-
-                        <!-- Item 2 -->
-                        <div class="item">
-                            <img src="./assets/images/tip-2.png" alt="Solution for clean look working space" class="images">
-                            <div class="content">
-                                <div class="heading">
-                                    Solution for clean look working space
-                                </div>
-                                <div class="date">10 jan 2020</div>
-                            </div>
-                        </div>
-                        <div class="asd">
-                            
-                        </div>
-
-                        <!-- Item 3 -->
-                        <div class="item">
-                            <img src="./assets/images/tip-3.png" alt="Make your cooking activity more fun with good setup" class="images">
-                            <div class="content">
-                                <div class="heading">
-                                    Make your cooking activity more fun with good setup
-                                </div>
-                                <div class="date">20 jan 2020</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-*/
