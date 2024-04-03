@@ -541,6 +541,11 @@ a {
     align-items: center;
     justify-content: center;
 }
+
+.btn-inspirations:hover {
+    background: #fad5bd;
+    color: #e89f71;
+}
 /* ======================== Tip & Trick ======================== */
 .tipandtrick {
     margin-top: 44px;
@@ -606,10 +611,80 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-.share .images {
+.share-content {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.share .title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #616161;
+}
+
+.share .hashtag {
+    margin-top: 8px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    color: #3a3a3a;
+}
+
+/* .images-wrapper {
+    display: grid;
+    margin-top: 5px;
+    grid-auto-rows: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+}
+
+.images-wrapper div {
+    background: orange;
+} */
+
+.grid-wrapper img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.grid-wrapper > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-wrapper > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+
+.grid-wrapper .wide {
+    grid-column: span 2;
+}
+
+.grid-wrapper .tall {
+    grid-row: span 2;
+}
+
+.grid-wrapper .big {
+    grid-column: span 2;
+    grid-row: span 2;
 }
 
 /* ======================== Responsive ======================== */
