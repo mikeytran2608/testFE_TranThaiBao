@@ -192,6 +192,11 @@ a {
     overflow: hidden;
 }
 
+.slider .cta-btn:hover {
+    background: #fad5bd;
+    color: #e89f71;
+}
+
 .slider .list {
     display: flex;
     position: absolute;
@@ -228,6 +233,11 @@ a {
     font-family: "Gilroy", sans-serif;
     font-weight: bold;
     cursor: pointer;
+}
+
+.slider .buttons button:hover {
+    background: #fad5bd;
+    color: #e89f71;
 }
 
 .slider .dots {
@@ -472,6 +482,12 @@ a {
     color: #e89f71;
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-show-more:hover {
+    background: #e89f71;
+    color: #fff;
 }
 /* ======================== Inspirations ======================== */
 .inspirations {
@@ -481,7 +497,7 @@ a {
 
 .inspirations .body {
     display: flex;
-    padding: 53px 0;
+    padding: 53px 59px 35px;
     justify-content: space-between;
 }
 
@@ -514,8 +530,11 @@ a {
 }
 
 .btn-inspirations {
+    margin-top: 24px;
     min-width: 176px;
     height: 48px;
+    font-size: 16px;
+    font-weight: 600;
     color: #fff;
     background: #e89f71;
     display: flex;
